@@ -1,3 +1,5 @@
+
+
 # Rick and Morty
 
 Una aplicacion secilla utilizando la [API de rick and morty](https://rickandmortyapi.com/),  la cual cuenta con 4 secciones 
@@ -16,13 +18,3 @@ Puedes visitar la pagina [AQUÍ](https://jovial-hugle-e097ca.netlify.app/)
  3. [React Icons](https://react-icons.github.io/react-icons/) 
  4. [Styled Components](https://styled-components.com/)
 
-# Flujo de las páginas
-
-
-```mermaid
-graph LR
-A[Home page] -- idCharacter --> B[Single Character]
-A[Home page] --> C[Locations Page]
-C[Locations Page]-- arrayIdCharacters --> D[Residents Locations]
-D[Residents Locations]-- idCharacter  --> B[Single Character]
-```
