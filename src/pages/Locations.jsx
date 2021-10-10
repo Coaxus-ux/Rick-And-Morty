@@ -1,10 +1,11 @@
 import React from 'react'
 import Navbar from '../components/NavBar/Navbar'
+import CardLocations from '../components/Locations/CardLocations';
 const Locations = () => {
     return ( 
         <>
             <Navbar/>
-            <h1>Desde location</h1>
+            <CardLocations/>
         </>
      );
 }

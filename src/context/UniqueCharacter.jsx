@@ -4,7 +4,7 @@ import axios from "axios";
 export const UniqueCharactersContext = createContext();
 
 const UniqueCharactersProvider = (props) => {
-  const [nameCharacter, setNameCharacter] = useState('');
+  const [nameCharacter, setNameCharacter] = useState("");
   const [character, setCharacter] = useState([]);
   const [showUnique, setShowUnique] = useState(true);
   const [pages, setPage] = useState(1);
@@ -18,8 +18,11 @@ const UniqueCharactersProvider = (props) => {
       setCharacter(ResCharacter.data.results);
     };
     getCharacters();
-    const startPage = document.querySelector("#startPage");
-    startPage.scrollIntoView({ behavior: "smooth" });
+    window.scroll({
+      top: 100,
+      left: 100,
+      behavior: "smooth",
+    });
   }, [nameCharacter, pages]);
   return (
     <UniqueCharactersContext.Provider

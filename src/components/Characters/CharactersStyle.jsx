@@ -16,6 +16,7 @@ export const CardContainer = styled.div`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   margin: 10px;
+  cursor: pointer;
   width: 300px;
   img {
     border-radius: 15px 15px 0 0;
@@ -61,5 +62,6 @@ export const Form = styled.form`
     flex-direction: column;
   }
 `;
+
 
 
