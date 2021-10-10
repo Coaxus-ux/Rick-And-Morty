@@ -12,7 +12,7 @@ const CardLocations = () => {
     <br/><br/>
       <GripTemplate>
         {locationsInfo.map((locations) => (
-          <CardContainer>
+          <CardContainer key={locations.id}>
             <h1>{locations.name}</h1>
             <p>{locations.type}</p>
           </CardContainer>

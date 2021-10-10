@@ -5,7 +5,6 @@ const HamburgerMenu = () => {
         <HambuergerMenu>
             <NavLinkMenu to="/">Characters</NavLinkMenu>
             <NavLinkMenu to="/locations">Locations</NavLinkMenu>
-            <NavLinkMenu to="/episodes">Episodes</NavLinkMenu>
         </HambuergerMenu>
      );
 }

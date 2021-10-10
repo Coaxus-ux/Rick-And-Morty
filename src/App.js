@@ -7,9 +7,10 @@ import CharacterInfoProvider from './context/CharacterInfoContext';
 import LocationsProvider from './context/LocationsContext';
 
 import Characters from './pages/Characters';
-import Episodes from './pages/Episodes';
 import Locations from './pages/Locations';
 import CharacterInfo from './pages/CharacterInfo';
+import LocationsResidents from './pages/LocationsResidents';
+
 import Loading from './components/Utilities/Loading';
 
 
@@ -31,9 +32,10 @@ function App() {
                 <Router>
                   <Switch>
                     <Route exact path="/" component={Characters} />
-                    <Route path="/episodes" component={Episodes} />
-                    <Route path="/locations" component={Locations} />
                     <Route path="/character-info" component={CharacterInfo} />
+                    <Route path="/locations" component={Locations} />
+                    <Route path="/locations-residents" component={LocationsResidents} />
+                    
                   </Switch>
                 </Router>
               )

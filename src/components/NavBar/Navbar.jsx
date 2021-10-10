@@ -21,7 +21,6 @@ const Navbar = () => {
         <NavMenu>
           <NavLink to="/">Characters</NavLink>
           <NavLink to="/locations">Locations</NavLink>
-          <NavLink to="/episodes">Episodes</NavLink>
         </NavMenu>
       </Nav>
       {menu ? <Menu /> : null}
