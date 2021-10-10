@@ -9,7 +9,7 @@ import { CharacterInfoContext } from "../../context/CharacterInfoContext";
 
 /* LLamados Components */
 import Utilities from "../Utilities/Pagination";
-import UniqueCharacter from "./UniqueCharacter";
+import SearchCharacter from "./SearchCharacter";
 
 
 const CardsCharacter = () => {
@@ -42,7 +42,7 @@ const CardsCharacter = () => {
           <Utilities />
         </>
       ) : (
-        <UniqueCharacter />
+        <SearchCharacter />
       )}
     </>
   );

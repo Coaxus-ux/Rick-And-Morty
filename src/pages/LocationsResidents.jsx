@@ -1,11 +1,11 @@
 import React from 'react';
 import Navbar from '../components/NavBar/Navbar'
-import SinglePlanet from '../components/Locations/SinglePlanet'
+import SingleLocation from '../components/Locations/SingleLocation'
 const LocationsResidents = () => {
     return ( 
         <>
         <Navbar/>
-        <SinglePlanet/>
+        <SingleLocation/>
         </>
      );
 }

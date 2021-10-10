@@ -17,3 +17,10 @@ export const CardContainer = styled.div`
     margin:0 0 30px 0;
   }
 `;
+
+export const Nobody = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;

@@ -5,6 +5,8 @@ import AllCharactersProvider from './context/AllCharactersContext';
 import UniqueCharactersProvider from './context/UniqueCharacter';
 import CharacterInfoProvider from './context/CharacterInfoContext';
 import LocationsProvider from './context/LocationsContext';
+import UniqueLocationProvider from './context/UniqueLocationContext';
+
 
 import Characters from './pages/Characters';
 import Locations from './pages/Locations';
@@ -27,20 +29,22 @@ function App() {
       <UniqueCharactersProvider>
         <CharacterInfoProvider>
           <LocationsProvider>
-            {isLoad ? (<Loading />) :
-              (
-                <Router>
-                  <Switch>
-                    <Route exact path="/" component={Characters} />
-                    <Route path="/character-info" component={CharacterInfo} />
-                    <Route path="/locations" component={Locations} />
-                    <Route path="/locations-residents" component={LocationsResidents} />
-                    
-                  </Switch>
-                </Router>
-              )
+            <UniqueLocationProvider>
+              {isLoad ? (<Loading />) :
+                (
+                  <Router>
+                    <Switch>
+                      <Route exact path="/" component={Characters} />
+                      <Route path="/character-info" component={CharacterInfo} />
+                      <Route path="/locations" component={Locations} />
+                      <Route path="/locations-residents" component={LocationsResidents} />
 
-            }
+                    </Switch>
+                  </Router>
+                )
+
+              }
+            </UniqueLocationProvider>
           </LocationsProvider>
         </CharacterInfoProvider>
       </UniqueCharactersProvider>
